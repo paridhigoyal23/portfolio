@@ -14,3 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
       navbar.classList.toggle('active');
     });
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var scrollLinks = document.querySelectorAll('.scroll-link');
+    
+    scrollLinks.forEach(function(scrollLink) {
+      scrollLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        var targetId = this.getAttribute('href');
+        var targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
