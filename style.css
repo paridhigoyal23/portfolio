@@ -661,10 +661,7 @@ border-radius:50%;
 color:#ff004f;
 transform:translateY(-5px);
 }
-.btn.btn2{
-    display:inline-block;
-    background:#ff004f;
-}
+
 .contact-right form{
     width:100%;
 }
@@ -672,10 +669,10 @@ form input, form textarea{
     width:100%;
     border:0;
     outline:none;
-    background:grey;
+    background:white;
     padding:15px;
     margin:15px 0;
-    color:white;
+    color:black;
     font-size:18px;
     border-radius:6px;
 }
